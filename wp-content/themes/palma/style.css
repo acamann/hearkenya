@@ -1,0 +1,255 @@
+/*
+Theme Name: Palma's Cambodia Blog
+Theme URI: http://www.palma.com/
+Description: A travel theme.
+Version: 1.0
+Author: Andy Camann
+Tags: mantle color, variable width, two columns, widgets
+
+*/
+
+body, html, form { margin:0px; padding:0px; }
+body { font-family:Verdana, Lucida Sans, Arial; color:#003333;}
+
+html { background-image: url(images/back.jpg); }
+
+/* clear header style */
+h1, h2, h3, h4, h5, h6 { margin: 0px; padding:0px; }
+
+a { color:#ffffff; }
+a:visited { color:#F5EAA0; }
+a:hover { text-decoration:none; color:#CC3333; }
+	
+#wrapper  
+{
+	position:relative;
+	margin:0 auto;
+	width:891px;
+}
+
+
+/* header */
+#header { position:relative; padding:15px; 
+  /* background-color:#003333; */ background-color:#FAFAF8; background-image:url(images/head.jpg); background-repeat:no-repeat; }
+	#header h1 { margin:0px; padding:0px; 
+           font-size:40px; text-align:right; }	/* title */
+	#header h3 { margin:0px;  font-size:14px; 
+           font-weight:normal; text-align:right; }	/* subtitle */
+	#header img { position:absolute; bottom:15px; } /* subscribe */
+         #header h1 a { text-decoration:none; color:#CC3333; }
+         #header h1 a:hover { color:#C4D3AA; }
+/* end header */
+
+
+/* navigation */
+#nav-wrapper { float:left; width: 100%; background-color: #C4D3AA; border-bottom:solid 2px #ffffff; border-top:solid 2px #ffffff; }
+	#nav-wrapper ul { padding: 0;  }
+		#nav-wrapper ul li { display: inline; }
+	#nav-wrapper ul
+	{
+	margin: 0;
+	padding: 0 0 0 7%;
+	color: #003333;
+	font-family: tahoma, verdana, geneva, arial, helvetica, sans-serif;
+	font-size: .9em;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	}
+		#nav-wrapper ul li a
+		{
+		padding: 0.2em 12px;
+		background-color: #C4D3AA;
+		color: #003333;
+		text-decoration: none;
+		float: left;
+		border-right: 1px solid #94B473;
+		}
+		#navcontainer ul li a:hover { background-color: #7B9D25; color: #FFFFFF; }
+		#nav li a:hover, #nav li a:active
+		{
+		color: #FFFFFF;
+		text-decoration: none;
+		background: #CC3333;
+		text-align: left;
+		}
+/* end navigation */
+
+#content-wrapper 
+{
+	position:relative;	
+	float:left;
+	clear:both;
+	width:100%;
+	background-color:#99B1C9;
+	background-image:url(images/maplayout.jpg);
+	background-repeat:no-repeat;
+}
+
+
+#search 
+{
+	position:absolute;
+	/*float:left;*/
+	left:0px;
+	top:0px;
+	padding:10px;
+}
+
+/*#search input#searchsubmit {
+         width: 51px;
+         height: 18px;
+         background: transparent url(images/search.gif) no-repeat;
+         outline: none;
+}*/
+
+
+#content
+{
+	position:static;
+	/*float:left;*/
+	float:right;
+	/*left:275px;*/
+	/*top:125px;*/
+	margin-top:120px;
+	margin-right:30px;
+	width:580px;
+}
+#footer
+{
+         float:left;
+         position:static;
+         width:100%;
+         text-align:center;
+         background-color:#C4D3AA;
+         font-size:0.6em;
+         border-bottom:solid 2px #ffffff; 
+         border-top:solid 2px #ffffff;
+}
+#footer cite 
+{
+         padding:10px;
+         display:block;         
+}
+#footer a { color:#003333; }
+
+/* sidebar content */
+#sidebar
+{
+	position:static;
+	float:left;
+	/*left:15px;*/
+	/*top:225px;*/
+	margin-left:15px;
+	margin-top:250px;
+	width:235px;
+	font-size:0.7em;
+}
+
+	#sidebar h2 
+	{
+		font-size:1.3em;
+		/*font-weight:normal;*/
+		padding:2px;
+		color:#003333;
+		text-align:left;
+		border-bottom: solid 1px #003333;	
+	}
+	#sidebar p { margin-top:2px; /*margin:0px;padding:2px;*/ }
+	#sidebar ul { margin:0px; padding:0px; padding-bottom:20px; }
+	#sidebar ul li { list-style-type:none; }
+	#sidebar ul li a 
+	{
+		display:block;
+		padding:2px;
+		text-decoration:none;
+		color:#ffffff;
+		border-bottom:solid 1px #ffffff;
+	}
+	#sidebar ul li a:hover { color:#CC3333; border-bottom:solid 1px Transparent; }
+        #sidebar #disclaimer 
+        { 
+		background-color:#fff;
+		border-top:solid 1px #757A74; border-bottom:solid 1px #757A74; 
+		color:#757A74; 
+		padding:5px; 
+		margin-bottom:20px;
+		font-size:0.8em;
+	}
+/* end sidebar content */
+
+
+/* blog post */
+.post 
+{
+	padding:10px;
+}
+
+.post h2
+{
+	font-size:1.4em;
+	font-weight:normal;
+	color:#ffffff;
+	border-bottom: solid 1px #ffffff;
+}
+.post h2 a { text-decoration:none; }	
+.post .post-date 
+{
+	font-size:0.8em;
+	padding:2px;
+	/*text-align:right;*/
+	color:#666666;
+	/*background-color:#ffffff;*/
+	/*border-top:solid 2px #ffffff;
+	border-bottom:solid 2px #ffffff;*/
+}
+.post .post-content 
+{
+	color:#003333;
+	margin-left:15px;
+}
+.post .post-more-link 
+{
+	text-align:right;
+	font-size:0.8em;
+}
+/* end blog post */
+
+#comment-wrapper {
+         padding:15px;
+         font-size:0.9em;
+}
+#comment-wrapper h2 {
+         font-size:1em;
+         border-bottom:solid 1px #ffffff;
+}
+ol#commentlist {
+         list-style-type:none;
+         margin:0px; padding:0px;
+}
+
+ol#commentlist li {
+         padding:10px;
+         background-color:#C4D3AA;
+         border:solid 1px #003333;
+         margin:10px;
+}
+
+
+
+/* SLIDESHOW GALLERY */
+#image {position:relative; width:221px; height:150px; padding:5px; border:2px solid #666; background:#FFF url(images/loading.gif) center center no-repeat}
+#image img {position:absolute; top:5px; left:5px}
+
+/*hide all of this */
+#thumbwrapper {margin-top:10px; padding:5px 0; width:682px; height:100px; border:2px solid #666; background:#FFF; display:none; }
+#thumbarea {position:relative; overflow:hidden; height:100px; width:682px; }
+#thumbs {position:absolute; list-style:none; margin-left:5px; height:100px; width:10000px; border-right:5px solid #FFF}
+#thumbs li {float:left; margin-right:5px; cursor:pointer}
+.imgnav {position:absolute; height:375px; width:20%; z-index:100; height:375px; width:20%; z-index:100; outline:none; cursor:pointer}
+/* stop hiding */
+
+#previmg {left:0; background:url(images/left.gif) left center no-repeat; border-left:5px solid #FFF}
+#previmg:hover {opacity:1; filter:alpha(opacity=100)}
+#nextimg {right:0; background:url(images/right.gif) right center no-repeat; border-right:5px solid #FFF}
+#nextimg:hover {opacity:1; filter:alpha(opacity=100)}
